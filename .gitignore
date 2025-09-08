@@ -1,0 +1,56 @@
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Serilog log files
+*.log
+Logs/
+
+# Rider / VSCode / VS
+.idea/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio
+.vs/
+
+# DotCover
+.idea.DotSettings
+
+# Tye
+.tye/
+
+# Azure artifacts
+*.azurepubxml
+*.pubxml
+*.publishproj
+**/Properties/ServiceDependencies/
+**/Properties/PublishProfiles/
+
+# Docker
+*.dockerignore
+docker-compose.override.yml
+docker-compose.override.*.yml
+
+# Node (if frontend added later)
+node_modules/
+
+# Others
+*.dbmdl
+*.bak
+*.sql
+*.pdb
+*.tmp
+*.swp
