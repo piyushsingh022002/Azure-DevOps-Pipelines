@@ -1,4 +1,4 @@
-name: Multi-Stage Pipeline
+﻿name: Multi-Stage Pipeline
 
 on:
   push:
@@ -36,6 +36,10 @@ jobs:
     runs-on: ubuntu-latest
     needs: test
     if: github.ref == 'refs/heads/main'
+    environment:
+     name: production
+     url: https://your-app-url.com
     steps:
-      - name: Deploying...
-        run: echo "Deploying to production server..."
+    - name: Deploy
+      run: echo "🚀 Deploying to production..."
+
